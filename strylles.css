@@ -1,0 +1,524 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+
+/* Estilos do Body ou Corpo da Página */
+
+body {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+
+  /* Estilos do Fundo da Página principal */
+
+  background-image: url("./assets/Imagem\ do\ Fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+/* Estilos do Botão WhatsApp */
+
+.botao-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  transition: background 0.3s ease;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s; /* Transição suave para o botão WhatsApp */
+  animation: saltar 1.6s ease; /* Animação de salto do botão  */
+  animation-iteration-count: infinite; /* Animação infinita para o botão de contato */
+
+}  
+
+
+/* Efeito de Saltar do Botão do WhatsApp */
+
+@keyframes saltar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* Butao do WhatsApp ira Cresser! */
+
+.botao-whatsapp img:hover {
+    transform: scale(1.4);
+}
+
+
+/* Estilos do Header ou Cabeçalho */
+
+.menu-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #f70404f9;
+  box-shadow: #f90808 0px 0px 10px;
+}
+
+/* Estilos do Logo imagem*/
+
+.logo-imagem img {
+  border-radius: 50%;
+  border: #ff0000f5 1px solid;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(245, 7, 2, 0.923);
+  transition: transform 0.3s ease;
+
+}
+
+.logo-imagem img:hover {
+   transform: scale(1.5);
+
+}
+
+
+/* Estilos do Menu de Navegação */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos dos Itens do Menu: Inicio, Serviços, Contato */
+
+nav ul li a {
+  color: rgb(167, 159, 159);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px
+
+}
+
+/* Efeito Linha Vermelha Abaixo dos Links do Menu */
+
+ 
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #f70404f9;
+  transition: width 0.3s ease-in-out;
+  margin-top: 5px;
+
+}
+
+/* Tempo da linha vermelha Abaixo dos Links do Menu */
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+/* Estilos da Seção Principal nome VALMIR BARBER */
+
+.secao-principal {
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    max-width: 1200px;
+}
+
+
+/* Estilos do Nome VALMIR BARBER */
+
+h1 {
+  text-align: center;
+  margin-top: 15rem;
+  font-size: 5rem;
+  color: #f70404f9;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+
+}
+
+/* Estilos do Conteúdo Principal h2 */
+
+.meu-titulo-principal {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+
+}
+
+.meu-titulo-principal span {
+  color: #f70404f9;
+  font-weight: bold;
+}
+
+
+
+/* Estilos da Seção Principal-Serviços */
+
+.secao-principal-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: none;
+  transition: transform 0.3s ease;
+  
+  
+}
+
+/* Efeito de Hover a tela ira crecser! itens-principais */
+
+.itens-principais {
+  flex: 1 1 calc(33.333% - 40px);
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+
+}
+
+.itens-principais:hover {
+  transform: scale(1.05);
+}
+
+
+/* configurações da imagem dos serviços */
+
+.secao-principal-servicos .itens-principais img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0px 8px rgba(242, 4, 4, 0.949);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+
+
+}
+
+/* meu h3 */
+
+.secao-principal-servicos .itens-principais h3 {
+  font-size: 2rem;
+  color: #f70404f9;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+
+}
+
+/* meu preço principal */
+
+.preco-principal {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+
+}
+
+.preco-principal span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: #ffffff;
+    font-weight: 300;
+    display: block;
+    margin-top: 0.5rem;
+
+}
+
+
+/* meu paragrafo dos serviços */
+
+.secao-principal-servicos .itens-principais p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+
+
+/* Butao Deixar Reservado */
+
+.btn-saiba-mais {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f70404f9;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.4s; /* Transição suave para o botão WhatsApp */
+  box-shadow: 0 0px 8px rgba(242, 4, 4, 0.949);
+
+}
+
+.btn-saiba-mais:hover {
+  background-color: #c41313;
+}
+
+/*  Botão Saiba Mais ira crescer */
+
+.btn-saiba-mais:hover {  
+  transform: scale(1.2);
+}
+
+
+/* Estilos da Seção Principal-Contato */
+
+.secao-principal-contato {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.secao-principal-contato h2 {
+  font-size: 2.5rem;
+  color: #f70404f9;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+}
+
+
+.secao-principal-contato p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+/* Estilos do Formulário de Contato */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #222;
+  padding: 20px;
+  
+}
+
+/* Estilos dos inputs */
+
+.secao-principal-contato form input,
+.secao-principal-contato form textarea {  /* Essa linha de codigo é a sua mensagem */
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.secao-principal-contato form input::placeholder,
+.secao-principal-contato form textarea::placeholder {
+  color: #aaaaaa;
+}
+
+/* Meu Botão Agendar */
+
+.btn-agendar {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f70404f9;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.4s; /* Transição suave para o botão WhatsApp */
+  box-shadow: 0 0px 8px rgba(242, 4, 4, 0.949);
+  transition: transform 0.4s; /* Transição suave para o botão WhatsApp */
+
+}
+
+.btn-agendar:hover {
+  background-color: #c41313;
+}
+
+/*  Botão Agendar ira crescer */
+
+.btn-agendar:hover {  
+  transform: scale(1.2);
+}
+
+
+/*  Botão Saiba Mais ira crescer */
+
+.btn-saiba-mais:hover {  
+  transform: scale(1.2);
+}
+
+
+
+/* Estilos da Seção Sobre Nós */
+
+.sobre-nos {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;;
+  padding: 25px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.sobre-nos h2 {
+  font-size: 2.5rem;
+  color: #f70404f9;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+}
+
+.sobre-nos p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+/* Estilos do Footer ou Roda Pé */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 120px;
+  background-color: #222;
+  color: #ffffff;
+  position: relative;
+  bottom: 50px;
+  box-shadow: 0 0px 8px rgba(242, 4, 4, 0.949);
+  border-radius: 10px;
+
+}
+
+/* Meu paragrafo */
+
+footer .copyright-redes-sociais {
+  font-size: 1.3rem;
+  color: #f70404f9;
+  margin-top: 10px;
+  font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+
+}
+
+/* Estilos das Redes Sociais no Footer */
+
+.redes-sociais {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+
+
+/* Estilos do Desenvolvedor Paulo Ricardo */
+
+.desenvolvedor-paulo-ricardo {
+  color: #79f704f9;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 90.1);
+  text-decoration: none;
+  margin-top: 20px;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+/* Estilos do Menu Toggle para Mobile/Celular */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
