@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   list-style: none;
 }
 
@@ -25,20 +25,20 @@ body {
   z-index: 1000;
 }
 
-  header img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: solid 2px #ff1a1a;
-    transition: 0.3s;
-  }
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 2px #ff1a1a;
+  transition: 0.3s;
+}
 
-  .menu-principal nav ul {
-    display: flex;
-    gap: 30px;
-    font-size: 20px;
-  }
+.menu-principal nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
 
 .menu-principal a {
   color: #fff;
@@ -58,8 +58,9 @@ body {
 /* HOME */
 .secao-principal {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(20,0,0,0.9)),
-              url('./assets/cabelo.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 0, 0, 0.9)),
+    url("./assets/cabelo.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,8 +114,7 @@ body {
   box-shadow: 0 0 20px #ff000080;
 }
 
-
- /* AVALIAÇÕES */
+/* AVALIAÇÕES */
 .secao-avaliacoes {
   background: linear-gradient(180deg, #000, #1a0000);
   padding: 80px 8%;
@@ -155,7 +155,7 @@ body {
   margin-bottom: 15px;
   object-fit: cover;
   border-radius: 10px;
-  }
+}
 
 .secao-avaliacoes p {
   font-size: 18px;
@@ -168,10 +168,9 @@ body {
   margin-top: -15px;
 }
 
-
 /* SERVIÇOS */
 
- .servicos-titulo-h2{
+.servicos-titulo-h2 {
   display: flex;
   justify-content: center;
   color: #ff1a1a;
@@ -307,7 +306,6 @@ section .itens-principais p {
   margin-bottom: 40px;
 }
 
-
 #form-contato input,
 #form-contato textarea {
   background: #1a0000;
@@ -379,7 +377,6 @@ section .itens-principais p {
   filter: drop-shadow(0 0 5px red);
 }
 
-
 /* LOCALIZAÇÃO */
 .secao-localizacao {
   background: linear-gradient(180deg, #000, #1a0000);
@@ -392,7 +389,6 @@ section .itens-principais p {
   margin-bottom: 20px;
   font-size: 40px;
 }
-
 
 /* FOOTER */
 footer {
@@ -409,7 +405,7 @@ footer {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-  
+
 .redes-sociais img:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 5px red);
@@ -425,7 +421,6 @@ footer .desenvolvedor-paulo-ricardo {
   margin-bottom: 15px;
 }
 
-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .menu-principal ul {
@@ -436,13 +431,19 @@ footer .desenvolvedor-paulo-ricardo {
 /* 🔥 EFEITO NEON PULSANDO */
 @keyframes neonPulse {
   0% {
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
+    text-shadow:
+      0 0 5px #ff0000,
+      0 0 10px #ff0000;
   }
   50% {
-    text-shadow: 0 0 20px #ff1a1a, 0 0 40px #ff0000;
+    text-shadow:
+      0 0 20px #ff1a1a,
+      0 0 40px #ff0000;
   }
   100% {
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
+    text-shadow:
+      0 0 5px #ff0000,
+      0 0 10px #ff0000;
   }
 }
 
@@ -474,31 +475,34 @@ footer .desenvolvedor-paulo-ricardo {
 
 /* 📱 RESPONSIVO COMPLETO */
 @media (max-width: 768px) {
-
   /* HEADER */
-  .menu-principal {
-    padding: 15px 5%;
-  }
+  @media (max-width: 768px) {
+    .menu ul {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
 
-  .menu-toggle {
-    display: block;
-  }
+      background: #000;
 
-  .menu-principal ul {
-    display: none;
-    flex-direction: column;
-    background: #000;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 70%;
-    padding: 20px;
-    gap: 15px;
-    border-left: 2px solid #ff1a1a;
-  }
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
 
-  .menu-principal ul.active {
-    display: flex !important;
+      padding: 20px 0;
+
+      display: none; /* escondido */
+    }
+
+    .menu ul.ativo {
+      display: flex; /* aparece quando clicar */
+    }
+
+    .menu-toggle {
+      display: block;
+      font-size: 28px;
+      cursor: pointer;
+    }
   }
 
   /* HOME */
@@ -566,10 +570,9 @@ footer .desenvolvedor-paulo-ricardo {
   .redes-sociais img {
     width: 30px;
   }
-
 }
 
-  .menu-toggle {
+.menu-toggle {
   display: none;
   font-size: 30px;
   color: white;
@@ -579,101 +582,100 @@ html {
   scroll-behavior: smooth;
 }
 
-  /* GALERIA */
-  .container-galeria img {
-    width: 90%;
+/* GALERIA */
+.container-galeria img {
+  width: 90%;
+}
+
+/* EQUIPE */
+.container-equipe {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FORM */
+#form-contato {
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* ===== AJUSTE GERAL MOBILE ===== */
+@media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
   }
 
-  /* EQUIPE */
-  .container-equipe {
+  /* ===== HEADER ===== */
+  header {
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* ===== MENU ===== */
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    height: auto;
+    background: #000;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border-left: 2px solid red;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  /* ===== SEÇÕES ===== */
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ===== SOBRE ===== */
+  .secao-principal-servicos {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
-  /* FORM */
-  #form-contato {
+  .secao-principal-servicos img {
     width: 100%;
-    padding: 0 10px;
+    max-width: 300px;
+    border-radius: 10px;
   }
 
-  /* ===== AJUSTE GERAL MOBILE ===== */
-@media (max-width: 430px) {
+  /* ===== SERVIÇOS ===== */
+  .itens-principais {
+    width: 100%;
+  }
 
-    body {
-        overflow-x: hidden;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-        padding: 15px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    /* ===== MENU ===== */
-    nav {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 70%;
-        height: auto;
-        background: #000;
-        display: none;
-        flex-direction: column;
-        padding: 20px;
-        border-left: 2px solid red;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    nav a {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    /* ===== SEÇÕES ===== */
-    section {
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    h1, h2 {
-        font-size: 26px;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    /* ===== SOBRE ===== */
-    .secao-principal-servicos {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .secao-principal-servicos img {
-        width: 100%;
-        max-width: 300px;
-        border-radius: 10px;
-    }
-
-    /* ===== SERVIÇOS ===== */
-    .itens-principais {
-        width: 100%;
-    }
-
-    /* ===== BOTÃO WHATSAPP ===== */
-    .whatsapp {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
-        right: 15px;
-    }
-
+  /* ===== BOTÃO WHATSAPP ===== */
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 /* ===============================
@@ -693,6 +695,12 @@ html {
   transform: translateY(0);
 }
 
-.animar:nth-child(1) { transition-delay: 0.1s; }
-.animar:nth-child(2) { transition-delay: 0.2s; }
-.animar:nth-child(3) { transition-delay: 0.3s; }
+.animar:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.animar:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.animar:nth-child(3) {
+  transition-delay: 0.3s;
+}
