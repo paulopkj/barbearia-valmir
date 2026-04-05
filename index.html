@@ -1,114 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./strylles.css" />
-    <title>Barbearia Valmir Barber</title>
+
+    <title>Valmir Barber | Barbearia em Fortaleza</title>
   </head>
 
   <body>
-
+    <!-- HEADER -->
     <header class="menu-principal">
       <div class="logo-imagem">
-        <img src="./assets/assets/logo valmir 1.png" width="70" alt="Logo da Barbearia" />
+        <img src="./assets/assets/logo valmir 1.png" width="70" alt="Logo" />
       </div>
+
       <nav>
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Agendar</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#videos">Nosso espaço</a></li>
+          <li><a href="#contato">Agendar</a></li>
         </ul>
       </nav>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
     </header>
 
+    <!-- HOME -->
     <section class="secao-principal" id="home">
       <div class="secao-principal-conteudo">
         <h1>VALMIR BARBER</h1>
         <h2 class="meu-titulo-principal">
-          UMA BARBEARIA <br /><span>PARA CHAMAR DE SUA</span>
+          UMA BARBEARIA <br />
+          <span>PARA CHAMAR DE SUA</span>
         </h2>
       </div>
     </section>
 
+    <!-- SOBRE -->
+    <section class="sobre-nos">
+      <div>
+        <img
+          src="./assets/assets/img. nosso espaco.webp"
+          width="450"
+          alt="nosso espaço"
+        />
+      </div>
 
-   <section class="secao-principal-servicos">
+      <div class="sobre-nos-conteudo">
+        <h2>Sobre Nós</h2>
+        <p>
+          Na Valmir Barber, somos apaixonados por transformar o visual dos
+          nossos clientes. oferecemos cortes de cabelo, barba e bigode de alta
+          qualidade em um ambiente acolhedor e moderno.
+          <br /><br />
+          Nosso compromisso é proporcionar uma experiência única, onde cada
+          cliente se sinta valorizado e saia satisfeito com seu novo estilo.
+          Venha nos visitar e descubra por que somos a escolha número um para
+          cuidados masculinos em Fortaleza!
+        </p>
+      </div>
+    </section>
 
+    <!-- SERVIÇOS -->
+
+    <h2 class="servicos-titulo-h2" id="servicos">Nossos serviços</h2>
+
+    <section class="secao-principal-servicos">
       <div class="itens-principais">
-          
-        <img src="./assets/corte da barba.avif" alt="Imagem do corte da barba" />
+        <img src="./assets/corte da barba.avif" alt="Barba" />
         <h3>Barba</h3>
         <div class="preco-principal">R$ 15,00 <span>R$ 20,00</span></div>
         <p>Dê à sua barba o cuidado que ela merece.</p>
-        <a class="btn-saiba-mais" href="#">Deixar Reservado!</a>
+        <a
+          class="btn-saiba-mais"
+          href="https://wa.me/5585988529412"
+          target="_blank"
+        >
+          Deixar Reservado!
+        </a>
       </div>
 
-
       <div class="itens-principais">
-        <img src="./assets/cabelo.jpg" alt="Imagem dos Serviços da Barbearia Valmir Barb" />
+        <img src="./assets/cabelo.jpg" alt="Cabelo" />
         <h3>Cabelo</h3>
-        <div class="preco-principal" >R$ 15,00 <span>R$ 20,00</span></div>
+        <div class="preco-principal">R$ 15,00 <span>R$ 20,00</span></div>
         <p>Mais que um corte, uma transformação.</p>
-        <a class="btn-saiba-mais" href="#">Deixar Reservado!</a>
+        <a
+          class="btn-saiba-mais"
+          href="https://wa.me/5585988529412"
+          target="_blank"
+        >
+          Deixar Reservado!
+        </a>
       </div>
 
       <div class="itens-principais">
-        <img src="./assets/corte da barba longa.webp" alt="Imagem dos Serviços da Barbearia Valmir Barb" />
+        <img src="./assets/corte da barba longa.webp" alt="Bigode" />
         <h3>Bigode</h3>
-        <div class="preco-principal" >R$ 15,00 <span>R$ 20,00</span></div>
+        <div class="preco-principal">R$ 15,00 <span>R$ 20,00</span></div>
         <p>Bigode bem feito é símbolo de elegância.</p>
-        <a class="btn-saiba-mais" href="#">Deixar Reservado!</a>
-      </div>
-
-
-      <div class="secao-principal-contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para agendar um horário.</p>
-        <form>
-          <input type="text" placeholder="Seu Nome" required />
-          <input type="email" placeholder="Seu Email" required />
-          <input type="tel" placeholder="Seu Telefone" required />
-          <textarea placeholder="Sua Mensagem" required></textarea>
-        </form>
-         <p>Ou entre em contato pelo WhatsApp: (85) 98852-9412</p>
-         <p><strong>Atendimento:</strong> Segunda a Sabado, das 9h às 18h</p>
-
-        <button class="btn-agendar">Agendar</button>
+        <a
+          class="btn-saiba-mais"
+          href="https://wa.me/5585988529412"
+          target="_blank"
+        >
+          Deixar Reservado!
+        </a>
       </div>
     </section>
 
+    <section class="videos-da-barbearia" id="videos">
+      <h2 class="titulo-secao">Veja nosso espaço</h2>
 
-    <a href="https://wa.me/5585988529412" class="botao-whatsapp" target="_blank">
-        <img src="./assets/assets/icons8-whatsapp-logo-94.png" width="80" alt="WhatsApp"></a>
+      <div class="container-videos">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Xa3edqQrF2E?si=c6-v4Nm8HD8ooLGo"
+          title="YouTube video player"
+          frameborder="1"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
 
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bEzi3V36a8w?si=o34BhBmfYassrge5"
+          title="YouTube video player"
+          frameborder="1"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
 
-    <section class="sobre-nos">
-        <h2>Sobre Nós</h2>
-        <p>Na Barbearia Valmir Barber, oferecemos um ambiente acolhedor e profissionais experientes para atender todas as suas necessidades de grooming.</p>
-        <p>Nosso objetivo é proporcionar uma experiência única e personalizada para cada cliente, garantindo que você saia satisfeito e renovado.</p>
-        <p>Venha nos visitar e descubra por que somos a escolha preferida dos homens que valorizam estilo e qualidade.</p>
-        <p>Localização: COLOCAR O ENDEREÇO CORRETO!!!, 123, Bairro: , Cidade - CE</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OxME5Xm42i0?si=86Hwjbm3vBG3wjqJ"
+          title="YouTube video player"
+          frameborder="1"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1LQzj-wL9z8?si=ftHs8pjBm7QTJHzY"
+          title="YouTube video player"
+          frameborder="1"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
+    <!-- AVALIAÇÕES -->
+    <section class="secao-avaliacoes" id="avaliacoes">
+      <h2 class="titulo-secao">O que nossos clientes dizem</h2>
+
+      <div class="container-avaliacoes">
+        <div class="card-avaliacao">
+          <img
+            src="./assets/assets/cliente avaliacao. 1.jpg"
+            alt="img clientes"
+          />
+          <p>"Melhor barbearia de Fortaleza! Atendimento top 🔥"</p>
+          <h4>João Silva</h4>
+        </div>
+
+        <div class="card-avaliacao">
+          <img
+            src="./assets/assets/cliente avaliacao. 2.avif"
+            alt="img clientes"
+          />
+          <p>"Corte perfeito e ambiente muito agradável!"</p>
+          <h4>Carlos Henrique</h4>
+        </div>
+
+        <div class="card-avaliacao">
+          <img
+            src="./assets/assets/cliente avaliacao a. 2.avif"
+            alt="img clientes"
+          />
+          <p>"Sempre saio satisfeito, recomendo demais!"</p>
+          <h4>Marcos Paulo</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHATSAPP -->
+    <a
+      href="https://wa.me/5585988529412"
+      class="botao-whatsapp"
+      target="_blank"
+    >
+      <img src="./assets/icons8-whatsapp-logo-94.png" width="80" />
+    </a>
+
+    <!-- CONTATO -->
+    <section class="secao-principal-contato" id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para agendar um horário.</p>
+
+      <form id="form-contato">
+        <input type="text" name="nome" placeholder="Seu Nome" required />
+        <input type="email" name="email" placeholder="Seu Email" required />
+        <input type="tel" name="telefone" placeholder="Seu Telefone" required />
+
+        <textarea
+          name="mensagem"
+          placeholder="Sua Mensagem"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn-saiba-mais">Enviar</button>
+
+        <p id="mensagem-form" style="margin-top: 10px"></p>
+      </form>
+    </section>
+
+    <!-- HORÁRIOS -->
+    <section class="secao-principal-horarios" id="horarios">
+      <h2>Nossos horários</h2>
+      <p>Sábado: 8h às 12h e 14h às 18:30</p>
+      <p>Domingo: 8h às 12h</p>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="secao-localizacao" id="localizacao">
+      <h2 class="titulo-secao">Onde estamos</h2>
+
+      <div class="container-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.8148568906086!2d-38.4835044!3d-3.8498833999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c75b0052b5b9d9%3A0x424f48735c730bd8!2sBarbearia%20Valmir%20Barber.!5e0!3m2!1spt-BR!2sbr!4v1775345090785!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <p class="copyright-redes-sociais">&copy; 2023 Barbearia Valmir Barber. Todos os direitos reservados.</p>
-      <p class="redes-sociais">
-        <br>
-        <h2>Siga-nos nas redes sociais</h2>
-        <br>
-        <a href="https://www.facebook.com/valmirulissesdasilva.silva"><img src="./assets/assets/icons8-facebook-48.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/val.mirbarber?igsh=MTVsMmtibjJkM2g3bA=="><img src="./assets/assets/icons8-instagram-48.png" alt="Instagram"></a> 
-        <a href="https://twitter.com/valmirulissesdasilva"><img src="./assets/assets/icons8-twitter-48.png" alt="Twitter"></a>
-      </p>
-      <br>
-        <p>Telefone: (85) 98852-9412</p>
-        <p>Email:
-            <a href="mailto:contato@barbeariavalmir.com" style="color: #f70404f9;">contato@barbeariavalmir.com</a></p>
-        <p class="desenvolvedor-paulo-ricardo">Desenvolvido por [ Paulo Ricardo ]</p>
+      <p class="copyright-redes-sociais">&copy; 2024 Barbearia Valmir Barber</p>
+
+      <div class="redes-sociais">
+        <p>Siga-nos</p>
+
+        <a
+          href="https://www.facebook.com/valmirulissesdasilva.silva?locale=pt_BR"
+          ><img src="./assets/assets/icons8-facebook-48.png"
+        /></a>
+        <a
+          href="https://www.instagram.com/valmirulissesda?igsh=MWdsZzMwOGxrYmF6Yg%3D%3D"
+          ><img src="./assets/assets/icons8-instagram-48.png"
+        /></a>
+        <a href="#"><img src="./assets/assets/icons8-twitter-48.png" /></a>
+      </div>
+
+      <p class="redes-sociais-footer">Telefone: (85) 98852-9412</p>
+      <p class="redes-sociais-footer">Email: ValmirBarb@gmail.com</p>
+
+      <p class="desenvolvedor-paulo-ricardo">Desenvolvido por Paulo Ricardo</p>
     </footer>
 
-<script src="./script.js"></script>
+    <!-- SCRIPT -->
+    <script src="./script.js"></script>
   </body>
 </html>
